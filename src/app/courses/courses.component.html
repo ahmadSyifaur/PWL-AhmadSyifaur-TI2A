@@ -1,0 +1,47 @@
+<h1>{{getTitle()}}</h1>
+<h2>{{Length+' Author'}}</h2>
+<ul *ngFor="let Course of Courses">
+  <li>
+    {{Course}}
+  </li>
+</ul>
+<br>
+<br>
+<br>
+<h1 align="center">{{getJudul()}}</h1>
+<h2 align="center">{{tanggal|date:medium}}</h2>
+<h2>{{getNama()}} <br> {{getAlamat()}}
+</h2>
+<h2>Hobi Saya</h2>
+
+<table border="2" >
+  <thead>
+    <th>No</th>
+    <th>Hobby</th>
+    <th>Keterangan</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Hobi of Hobby">
+      <td>{{Hobi.no}}</td>
+      <td>{{Hobi.hobby}}</td>
+      <td>{{Hobi.keterangan}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <table>
+  <thead>
+    <th>
+      #ID
+    </th>
+    <th>
+      Course Name
+    </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Course of Courses">
+      <td>{{Course.id}}</td>
+      <td>{{Course.name}}</td>
+    </tr>
+  </tbody>
+</table> -->
